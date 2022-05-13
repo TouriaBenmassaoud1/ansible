@@ -1,0 +1,11 @@
+#- name: Install Docker
+  #  get_url:
+          #    url: https://download.docker.com/linux/centos/docker-ce.repo
+    #    dest: /
+    #    mode: 0440
+- name:
+  yum:
+    name: jenkins
+    state: latest
+    
+

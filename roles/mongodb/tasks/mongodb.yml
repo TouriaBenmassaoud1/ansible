@@ -1,0 +1,9 @@
+- name: Download MongoDB
+  get_url:
+    url: https://repo.mongodb.org/yum/amazon/2/mongodb-org/5.0/x86_64/RPMS/mongodb-org-mongos-5.0.8-1.amzn2.x86_64.rpm
+    dest: /
+    mode: 0440
+- name: Extract the file
+  shell:
+    cmd: rpm2cpio mongodb-org-mongos-5.0.8-1.amzn2.x86_64.rpm | cpio -idmv
+    chdir: /
