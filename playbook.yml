@@ -1,7 +1,7 @@
 ---
 
 - name: 'Install Docker'
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
     - ping:
