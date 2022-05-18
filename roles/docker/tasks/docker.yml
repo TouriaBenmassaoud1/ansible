@@ -4,7 +4,6 @@
     #    dest: /
     #    mode: 0440
 - name:
-  become: yes
   service:
     name: docker
     state: stopped
