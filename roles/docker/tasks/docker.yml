@@ -4,11 +4,10 @@
     #    dest: /
     #    mode: 0440
 - name:
-  become: true
-  become_user: root
+  become: yes
   service:
     name: docker
-    state: restarted
+    state: stopped
 #- yum:
 #    name: docker
 #    state: latest
