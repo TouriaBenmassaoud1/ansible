@@ -3,7 +3,10 @@
           #    url: https://download.docker.com/linux/centos/docker-ce.repo 
     #    dest: /
     #    mode: 0440
-- name: 
-  yum:
+- name:
+  service:
     name: docker
-    state: latest
+    state: restarted
+#- yum:
+#    name: docker
+#    state: latest
