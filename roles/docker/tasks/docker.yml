@@ -4,6 +4,8 @@
     #    dest: /
     #    mode: 0440
 - name:
+  become: true
+  become_user: root
   service:
     name: docker
     state: restarted
